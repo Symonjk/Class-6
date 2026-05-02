@@ -1,0 +1,45 @@
+<html>
+    <head> 
+        <title>Horizontal Scrollspy</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+</script>
+    <style>
+        body {
+            position: relative;
+        }
+        p {
+            font-size: medium;
+        }
+        #section1 {padding: 1cm; height: 400px ; background-color: coral; color: aqua;}
+        #section2 {padding: 3cm; height: 600px ; background-color: rgb(46, 219, 153); color: rgb(255, 0, 0);}
+    </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://best.aliexpress.com/">aliexpress</a>
+                </div>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="nav navbar-nav">
+                        <li> <a href="#section1">Section 1 </a></li>
+                        <li> <a href="#section2">Section 2 </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="section1" class="container-fluid">
+            <h1>aliexpress</h1>
+            <p> AliExpress is a global online retail platform launched in 2010 as part of Alibaba Group. 
+                It connects international buyers directly with independent 
+                Chinese manufacturers and third-party sellers, offering a wide
+             variety of products, from electronics to fashion,typically at lower prices due to lower production costs and direct-from-factory sales.</p>
+        </div>
+    </body>
+</html>
